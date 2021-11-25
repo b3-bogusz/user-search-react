@@ -1,0 +1,52 @@
+@import '../../styles/variables';
+
+.root {
+  color: $white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 1.6rem;
+}
+
+.topWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $dark-grey;
+  border-radius: 2.5rem;
+  padding: 3rem;
+  min-width: 28rem;
+
+  @media #{$tablet-768-up} {
+    flex-direction: row;
+    align-items: center;
+    padding: 4rem;
+  }
+}
+
+.details {
+  width: 100%;
+  margin-bottom: 4rem;
+
+  @media #{$tablet-768-up} {
+    height: 100%;
+    margin-bottom: 0;
+  }
+}
+
+.year {
+  .phone,
+  .email,
+  .name,
+  .username,
+  .website,
+  .address,
+  .company {
+    font-size: 1.8rem;
+    margin: 0.8rem 0;
+  }
+}
+
+.prefix {
+  color: lighten($accent-color, 15%);
+}

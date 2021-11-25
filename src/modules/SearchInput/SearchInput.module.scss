@@ -1,0 +1,40 @@
+@import './src/styles/variables';
+
+.root {
+  position: relative;
+
+}
+
+.input {
+
+  height: 4rem;
+  border: 0.1rem solid $accent-color;
+  border-radius: 2.5rem;
+  color: white;
+  font-size: 1.4rem;
+  font-weight: 300;
+  outline: none;
+  background-color: transparent;
+  padding: 0.2rem 2rem 0.2rem 5rem;
+
+  &::placeholder {
+    color: $grey;
+  }
+
+  &:focus,
+  &:active {
+    border: 0.1rem solid $accent-color;
+  }
+
+  @media #{$tablet-768-up} {
+    padding: 0.4rem 2rem 0.4rem 5rem;
+  }
+}
+
+.svg {
+  position: absolute;
+  top: 50%;
+  left: 2rem;
+  transform: translateY(-50%);
+  color: $grey;
+}

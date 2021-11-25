@@ -1,0 +1,29 @@
+$accent-color: #A244FF;
+$black: #000;
+$black-transparent: rgba(0,0,0,0);
+
+.root {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.spinner {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  background: conic-gradient($black-transparent 10%, $accent-color);
+  -webkit-mask: radial-gradient(farthest-side, $black-transparent calc(100% - 8px), $black 0);
+  animation: loading 1s infinite linear;
+}
+
+@keyframes loading {
+  to {
+    transform: rotate(1turn);
+  }
+}
+
+.text {
+  color: white;
+  font-size: 1rem;
+}

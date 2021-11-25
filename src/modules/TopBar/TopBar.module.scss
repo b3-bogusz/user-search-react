@@ -1,0 +1,24 @@
+@import './src/styles/variables';
+
+.root {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+
+  background-color: $black;
+  padding: 2rem 0;
+
+  @media #{$tablet-768-up} {
+    align-items: center;
+  }
+}
+
+.search {
+
+}
+
+.goBack {
+  font-size: 1.6rem;
+  color: lighten($accent-color, 10%);
+}

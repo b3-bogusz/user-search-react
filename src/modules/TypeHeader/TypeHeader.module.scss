@@ -1,0 +1,19 @@
+@import './src/styles/variables';
+
+.root {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 3rem 0 1.5rem;
+}
+
+.title {
+  font-size: 4rem;
+  font-weight: 400;
+  margin: 0;
+
+  @media #{$tablet-768-up} {
+    font-size: 4.6rem;
+  }
+}

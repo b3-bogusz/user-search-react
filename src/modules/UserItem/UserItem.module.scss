@@ -1,0 +1,24 @@
+@import './src/styles/variables';
+
+.root {
+  display: flex;
+  align-items: center;
+  margin: 2rem;
+}
+
+.name {
+  font-size: 1.8rem;
+  color: $white;
+}
+
+.username {
+  font-size: 1.2rem;
+  color: $grey;
+  margin-left: 1.5rem;
+}
+
+.number {
+  font-size: 1.2rem;
+  margin-right: 1rem;
+  color: $grey;
+}
